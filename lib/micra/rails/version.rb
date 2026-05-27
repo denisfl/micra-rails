@@ -2,11 +2,11 @@
 
 module Micra
   module Rails
-    VERSION = "0.1.0"
+    VERSION = "0.2.0"
 
     # Tracks the Micra.js npm version we ship by default. The importmap pin
     # uses this value. Bump it together with VERSION when wrapping a new
     # upstream release.
-    MICRA_JS_VERSION = "2.1.0"
+    MICRA_JS_VERSION = "2.2.0"
   end
 end

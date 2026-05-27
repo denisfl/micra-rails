@@ -96,7 +96,7 @@ Pair Micra with **Turbo Streams** for the full Hotwire stack with reactivity.
 By default, `micra-rails` pins to jsDelivr:
 
 ```ruby
-pin "micra", to: "https://cdn.jsdelivr.net/npm/micra.js@2.1.0/dist/micra.esm.js"
+pin "micra", to: "https://cdn.jsdelivr.net/npm/micra.js@2.2.0/dist/micra.esm.js"
 ```
 
 To self-host (no third-party CDN):
