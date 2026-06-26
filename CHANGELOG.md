@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.4.0] — 2026-06-26
+
+- **Track Micra.js v2.7.0**, and pin the **`@2` major range** by default
+  (`micra.js@2/dist/micra.esm.js`) instead of a single patch version. Apps now pick
+  up Micra 2.x patches and minors automatically — no gem bump needed — and never
+  jump a breaking major. Re-pin a specific version in your `config/importmap.rb` if
+  you prefer it locked.
+- Upstream since 2.3.0 adds `destroy()` + `autoCleanup()` (clean teardown for
+  islands swapped out by htmx/Turbo), plus fixes. See the upstream
+  [changelog](https://github.com/denisfl/micra.js/blob/master/CHANGELOG.md).
+- No gem-side API changes — `micra_component`, `micra_includes`, and `micra_state`
+  work unchanged.
+- Existing apps that ran `micra:install` keep the version their `config/importmap.rb`
+  already pins; re-pin to `@2` to opt into auto-updates.
+
 ## [0.3.0] — 2026-05-30
 
 - **Track Micra.js v2.3.0.** Default importmap pin now points at the

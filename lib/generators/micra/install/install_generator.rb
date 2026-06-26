@@ -12,7 +12,7 @@ module Micra
       def pin_micra_in_importmap
         return unless File.exist?("config/importmap.rb")
 
-        line = %(pin "micra", to: "https://cdn.jsdelivr.net/npm/micra.js@#{Micra::Rails::MICRA_JS_VERSION}/dist/micra.esm.js", preload: true\n)
+        line = %(pin "micra", to: "#{Micra::Rails::MICRA_JS_PIN}", preload: true\n)
 
         append_to_file "config/importmap.rb" do
           "\n# Micra.js — reactive UI directives (<5 KB gzip)\n#{line}"

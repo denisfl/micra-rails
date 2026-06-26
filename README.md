@@ -93,11 +93,14 @@ Pair Micra with **Turbo Streams** for the full Hotwire stack with reactivity.
 
 ## Production vs CDN
 
-By default, `micra-rails` pins to jsDelivr:
+By default, `micra-rails` pins to jsDelivr at the `@2` major range, so you get
+Micra 2.x patches and minors automatically (and never a breaking major):
 
 ```ruby
-pin "micra", to: "https://cdn.jsdelivr.net/npm/micra.js@2.3.0/dist/micra.esm.js"
+pin "micra", to: "https://cdn.jsdelivr.net/npm/micra.js@2/dist/micra.esm.js"
 ```
+
+Pin a specific version instead if you'd rather lock it.
 
 To self-host (no third-party CDN):
 
