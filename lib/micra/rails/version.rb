@@ -6,7 +6,7 @@ module Micra
 
     # The upstream Micra.js release this gem is built and tested against. Bump it
     # when wrapping a new upstream release.
-    MICRA_JS_VERSION = "2.7.0"
+    MICRA_JS_VERSION = "2.7.1"
 
     # The default importmap pin. It tracks the MAJOR range (e.g. `@2`), not a single
     # patch — apps pick up Micra 2.x patches and minors automatically with no gem
